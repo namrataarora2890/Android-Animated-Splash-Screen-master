@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tricktekno.animatedsplash.SecondActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--include layout="@layout/content_second" /-->
+    <!--ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CACACA"
+        android:fillViewport="true"
+        -->
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical"
+
+
+            tools:context="com.tricktekno.animatedsplash.SecondActivity"
+            tools:showIn="@layout/activity_second">
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <!--TextView
+                android:id="@+id/textView1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/xyz"
+                android:textSize="17sp"
+                /-->
+
+                <com.tricktekno.animatedsplash.Typewriter
+                    android:id="@+id/textView1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/xyz"
+                    android:textColor="#696969"
+                    android:textSize="17sp"/>
+                <!--android:layout_gravity="center_vertical|start"-->
+
+                <!--com.ctc.android.widget.ImageMap-->
+
+
+ <!--               -->
+                <!--com.tricktekno.animatedsplash.ImageMap-->
+
+                <ImageView
+                    android:alpha="0.4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newindia"
+                    android:adjustViewBounds='true'
+                    android:layout_below="@+id/textView1"
+                    android:layout_weight="0.5"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/newnewindia"
+
+
+                    />
+                <!--android:visibility="invisible"-->
+                <ImageView
+                    android:id="@+id/img_india"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/newindia"
+                    android:layout_alignLeft="@id/newindia"
+                    android:layout_alignRight="@id/newindia"
+                    android:layout_alignTop="@id/newindia"
+                    android:alpha="1.0"
+                    android:background="@drawable/india"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/img_india"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/TelecomCircle_prompt"
+                    android:textColor="#696969"
+                    android:textSize="17sp"
+                    />
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_gravity="bottom"
+                android:spinnerMode="dialog"
+                android:text="[Choose]"
+                android:prompt="@string/TelecomCircle_prompt"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:textSize="25pt"
+                android:textColor="#FF8B1500"
+                />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/spinner1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Technology_prompt"
+                    android:textColor="#696969"
+                    android:textSize="17sp"
+                    />
+
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/textView3"
+                android:text="Delhi"
+                android:prompt="@string/Technology_prompt"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:textSize="25pt"
+                android:textColor="#FF8B1500"
+                />
+
+
+            <!--Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_below="@+id/spinner2"
+                android:tint="@color/colorAccent"
+                android:layout_weight="1"
+                android:text="Submit" /-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/spinner2"
+
+
+                    android:gravity="center_horizontal|bottom"
+                     >
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        android:paddingLeft="0px"
+                        android:paddingRight="100px"
+                        android:paddingBottom="55px"
+                        android:textSize="20dp"
+
+                        android:textColor="#FF1493"
+
+                        android:text="Click Here >>" />
+                    <!--</LinearLayout>-->
+                    <com.nightonke.boommenu.BoomMenuButton
+                        android:id="@+id/bmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10px"
+                        android:layout_alignParentRight="true"
+
+                        app:bmb_buttonEnum="ham"
+                        app:bmb_piecePlaceEnum="piecePlace_ham_5"
+                        app:bmb_buttonPlaceEnum="buttonPlace_ham_5"
+                        />
+
+
+                        <!--android:layout_below="@+id/spinner2"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+
+                </LinearLayout>
+
+            <!--android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_below="@+id/btnSubmit"
+                android:src="@android:drawable/ic_dialog_email" /-->
+                <!--android:textColor="#FF1493"
+                 android:background="#DAF7A6"-->
+
+            </RelativeLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    <!--/ScrollView-->
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

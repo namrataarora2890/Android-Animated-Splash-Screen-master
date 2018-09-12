@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CACACA"
+    android:fillViewport="true"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    tools:context=".BarActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearancePopupMenuHeader"
+        android:text="See the Performance of All Operators"
+        android:id="@+id/tvx"
+        android:textSize="20sp"
+        android:padding="5dp"
+
+
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Four major indicators of Network Performance are Latency , Speed , Throughput and Droprate. The relative performace of various operators is shown below.
+."
+        android:id="@+id/tvz"
+        android:padding="5dp"
+        android:layout_below="@+id/tvx"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Latency"
+
+        android:layout_below="@+id/tvz"
+        android:id="@+id/tv1"
+        android:padding="5dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Latency  indicates any kind of delay that happens in data communication over a network. Latency drives the responsiveness of the network. Low  latency networks are preferred over high latency networks. Latency is usually measured in milliseconds (ms)."
+        android:id="@+id/tv11"
+        android:padding="5dp"
+        android:layout_below="@+id/tv1"
+        android:layout_weight="1" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv11"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minimum Download Speed"
+
+        android:layout_below="@+id/chart1"
+        android:id="@+id/tv2"
+        android:padding="5dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The download speed is defined as the data transmission rate that is
+achieved separately for downloading a specified test file from a test server
+to a user's device.Download speed is measured in bits per second (kbps)"
+        android:id="@+id/tv22"
+        android:padding="5dp"
+        android:layout_below="@+id/tv2"
+        android:layout_weight="1" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv22"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Average Throughput"
+        android:id="@+id/tv3"
+        android:padding="5dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Network is  throughput  the rate at which packets are transmitted in a network. It can be expressed as an average rate. Even though a service providers advertise  certain speed, the actual speed may vary as per the number of users in the network and therefore avg throughput is specified.Network throughput is measured in bits per second (mbps). "
+        android:id="@+id/tv33"
+        android:padding="5dp"
+        android:layout_below="@+id/tv3"
+        android:layout_weight="1" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv33"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Droprate"
+        android:id="@+id/tv4"
+        android:padding="5dp"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="It measures the inability of Network to maintain a connection and is
+defined as the ratio of abnormal disconnects w.r.t. all disconnects (both
+ normal and abnormal). An abnormal disconnect may happen because of
+ Radio Link Failures, Uplink (UL) or Downlink (DL) interference, bad
+ coverage, unsuccessful handovers or any other reason."
+        android:id="@+id/tv44"
+        android:padding="5dp"
+        android:layout_below="@+id/tv4"
+        android:layout_weight="1" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv44"/>
+
+
+
+</RelativeLayout>
+<!--android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+</ScrollView>

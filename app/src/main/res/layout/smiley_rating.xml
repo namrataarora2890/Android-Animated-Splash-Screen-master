@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+
+    <!--RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Name"
+        android:textSize="17sp" />
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:hint="Shyam "
+        android:textSize="17sp"
+        android:background="@drawable/shape"
+
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout-->
+
+    <!--RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Email"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/etmail"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:hint="shyam@gmail.com"
+            android:textSize="17sp"
+            android:background="@drawable/shape"
+
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#a0db8e"
+
+            android:textSize="20sp"
+            android:text="Circle"
+             />
+
+        <Spinner
+            android:id="@+id/spcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:prompt="@string/TelecomCircle_prompt"
+            android:ellipsize="marquee"
+            android:layout_weight="1"
+
+            android:textSize="20sp"
+            android:textColor="#da8709"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentRight="true"
+            />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvoperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#a0db8e"
+            android:text="Operator"
+            />
+
+        <Spinner
+            android:id="@+id/spoperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:prompt="@string/TelecomCircle_prompt"
+            android:ellipsize="marquee"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textColor="#da8709"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentRight="true"
+            />
+
+    </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <!--TextView
+        android:id="@+id/tvavailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Is network available when you make a call ? "
+        android:textSize="17sp" /-->
+
+        <!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u003clt50"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50-70%"
+                android:textColor="#00f"
+                android:checked="false"
+                android:textSize="20sp"/>
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70-90%"
+                android:textColor="#00f"
+                android:checked="false"
+                android:textSize="20sp"/>
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u003e90%"
+                android:textColor="#00f"
+                android:checked="false"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout-->
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textViewSR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:text="Is network always available whenever you try to make a call or connect to internet ? How do you feel about   Network Availablity in your Area ?"
+        android:textSize="20sp" />
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/ratingView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSR2"
+        android:layout_centerVertical="true"
+        app:isIndicator="false"
+        app:angryColor="#f29a68"
+        app:drawingColor="#353431"
+        app:normalColor="#f2dd68"
+        app:placeHolderBackgroundColor="#e6e8ed"
+        app:placeHolderSmileColor="#ffffff"
+        app:textNonSelectionColor="#AEB3B5"
+        app:textSelectionColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewSR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingView2"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:text="Do you face to many  2g-3g-4g network fluctuations whenever you access internet ? What is your experience?"
+        android:textSize="20sp" />
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/ratingView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSR3"
+        android:layout_centerVertical="true"
+        app:isIndicator="false"
+        app:angryColor="#f29a68"
+        app:drawingColor="#353431"
+        app:normalColor="#f2dd68"
+        app:placeHolderBackgroundColor="#e6e8ed"
+        app:placeHolderSmileColor="#ffffff"
+        app:textNonSelectionColor="#AEB3B5"
+        app:textSelectionColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewSR4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingView3"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:text="Are you able to download media/data smoothly? How do you feel about the Download Speed in  your area ? "
+        android:textSize="20sp" />
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/ratingView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSR4"
+        android:layout_centerVertical="true"
+        app:isIndicator="false"
+        app:angryColor="#f29a68"
+        app:drawingColor="#353431"
+        app:normalColor="#f2dd68"
+        app:placeHolderBackgroundColor="#e6e8ed"
+        app:placeHolderSmileColor="#ffffff"
+        app:textNonSelectionColor="#AEB3B5"
+        app:textSelectionColor="#000000"/>
+    <!--TextView
+        android:id="@+id/textViewSR5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingView4"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:text="Rate the  Overall Performance ?"
+        android:textSize="17sp" /-->
+
+    <!--com.hsalf.smilerating.SmileRating
+        android:id="@+id/ratingView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSR5"
+        android:layout_centerVertical="true"
+        app:isIndicator="false"
+        app:angryColor="#f29a68"
+        app:drawingColor="#353431"
+        app:normalColor="#f2dd68"
+        app:placeHolderBackgroundColor="#e6e8ed"
+        app:placeHolderSmileColor="#ffffff"
+        app:textNonSelectionColor="#AEB3B5"
+        app:textSelectionColor="#000000"/-->
+
+
+
+
+    <!--android:textColorHint="#f00"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Are you able to access following mobile applications smoothly? Rate your experience . "
+        android:padding="5dp"
+
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Whatsapp"
+            android:id="@+id/whatsapp"
+            android:padding="5dp"
+            android:layout_weight="1" />
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/whatsapp_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:srb_starSize="30dp"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_stepSize=".1"
+            app:srb_borderColor="@color/green"
+            app:srb_fillColor="@color/golden_stars"
+            app:srb_isIndicator="false"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <!--android:layout_alignBottom="@+id/spacecraftImage"-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Facebook"
+            android:id="@+id/facebook"
+            android:padding="5dp"
+            android:layout_weight="1" />
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/facebook_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:srb_starSize="30dp"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_stepSize=".1"
+            app:srb_borderColor="@color/green"
+            app:srb_fillColor="@color/golden_stars"
+            app:srb_isIndicator="false"
+
+            android:layout_alignParentRight="true"
+            />
+        <!--android:layout_alignBottom="@+id/spacecraftImage"-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="gmaps"
+            android:id="@+id/gmaps"
+            android:padding="5dp"
+            android:layout_weight="1" />
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/gmaps_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:srb_starSize="30dp"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_stepSize=".1"
+            app:srb_borderColor="@color/green"
+            app:srb_fillColor="@color/golden_stars"
+            app:srb_isIndicator="false"
+
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Web Browsing"
+            android:id="@+id/webbrowsing"
+            android:padding="5dp"
+            android:layout_weight="1" />
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/webbrowsing_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:srb_starSize="30dp"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_stepSize=".1"
+            app:srb_borderColor="@color/green"
+            app:srb_fillColor="@color/golden_stars"
+            app:srb_isIndicator="false"
+
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Youtube"
+            android:id="@+id/youtube"
+            android:padding="5dp"
+            android:layout_weight="1" />
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/youtube_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:srb_starSize="30dp"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_stepSize=".1"
+            app:srb_borderColor="@color/green"
+            app:srb_fillColor="@color/golden_stars"
+            app:srb_isIndicator="false"
+
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:id="@+id/etxtEmail"
+        android:hint="Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/etxtPhone"
+        android:hint="Phone Number"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:id="@+id/btnSu"/>
+</LinearLayout>
+
+    </ScrollView>

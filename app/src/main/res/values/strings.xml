@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Broadband Label App</string>
+    <string name="action_settings">Settings</string>
+    <!--string name="title_activity_second">Choose a telecom circle and technology</string-->
+    <string name="title_activity_new">Star rating</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="Technology_prompt">Choose a technology</string>
+    <string name="TelecomCircle_prompt">Choose a Telecom Circle</string>
+    <string name="xyz">Tap on your Telecom Circle to see the performance of various Operators . </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="ip">agni.iitd.ac.in</string>
+    <string name="data_fetch">Fetching the Data ..</string>
+    <string name="image_fetch">Fetching the coverage map ..</string>
+    <string name="retrying">Retrying server connection ..</string>
+    <string name="server_error">Server unreachable ! Please  try after some time  .</string>
+    <string name="auth_error">Authentication Error .</string>
+    <string name="network_error"> Network not  Available  ! Please  check your network connection .</string>
+    <string name="parse_error">Invalid response received  .</string>
+    <string name="kml_url">http://googlemaps.github.io/kml-samples/morekml/Polygons/Polygons.Google_Campus.kml</string>
+
+
+        <string-array name="circle_names">
+            <item>Andhra Pradesh</item>
+            <item>Assam</item>
+            <item>Bihar and Jharkhand</item>
+            <item>Delhi</item>
+            <item>Gujarat</item>
+            <item>HP</item>
+            <item>Haryana</item>
+            <item>Jammu and Kashmir</item>
+            <item>Kolkata</item>
+            <item>Kerala</item>
+            <item>Karnataka</item>
+            <item>Maharashtra</item>
+            <item>Madhya Pradesh</item>
+            <item>Mumbai</item>
+            <item>North East</item>
+            <item>Orissa</item>
+            <item>Punjab</item>
+            <item>Rajasthan</item>
+            <item>Tamilnadu</item>
+            <item>Uttar Pradesh (East)</item>
+            <item>Uttar Pradesh (West)</item>
+            <item>West Bengal</item>
+        </string-array>
+
+    <string-array name="technology">
+        <item>2G</item>
+        <item>3G</item>
+        <item>4G</item>
+    </string-array>
+
+</resources>

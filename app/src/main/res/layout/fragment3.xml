@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"-->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <TextView style="?android:textAppearanceMedium"
+        android:id="@+id/f3tv1"
+
+        android:lineSpacingMultiplier="1.2"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="Q3 Please answer a few questions that  describe your opinion about the application." />
+
+    <!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"-->
+
+        <TextView style="?android:textAppearanceMedium"
+            android:id="@+id/f3tv2"
+            android:layout_below="@+id/f3tv1"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="1. Given  information was easy to understand.	" />
+
+        <CheckBox
+            android:id="@+id/f3q3s1cb1"
+            android:layout_below="@+id/f3tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/f3q3s1cb2"
+            android:layout_below="@+id/f3q3s1cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disagree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/f3q3s1cb3"
+            android:layout_below="@+id/f3q3s1cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:orientation="vertical" android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <TextView style="?android:textAppearanceMedium"
+            android:id="@+id/f3tv3"
+            android:layout_below="@+id/f3q3s1cb3"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="2. I found this imformation useful " />
+
+        <CheckBox
+            android:id="@+id/f3q3s2cb1"
+            android:layout_below="@+id/f3tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/f3q3s2cb2"
+            android:layout_below="@+id/f3q3s2cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disagree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/f3q3s2cb3"
+            android:layout_below="@+id/f3q3s2cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:orientation="vertical" android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <TextView style="?android:textAppearanceMedium"
+            android:id="@+id/f3tv4"
+            android:layout_below="@+id/f3q3s2cb3"
+            android:lineSpacingMultiplier="1.2"
+
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="3. There is not enough information	" />
+
+        <CheckBox
+            android:id="@+id/f3q3s3cb1"
+            android:layout_below="@+id/f3tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/f3q3s3cb2"
+            android:layout_below="@+id/f3q3s3cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disagree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/f3q3s3cb3"
+            android:layout_below="@+id/f3q3s3cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+
+    <!--</LinearLayout>-->
+
+    <!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView style="?android:textAppearanceMedium"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="4. There should be a standardised Label format	" />
+
+        <CheckBox
+            android:id="@+id/CB-1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/CB-2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disagree"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/CB-3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:textColor="#00f"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/f3q3s3cb3"
+            android:layout_marginTop="5px"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2px" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="Swipe >>" />
+        </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

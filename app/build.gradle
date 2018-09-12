@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.tricktekno.animatedsplash"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+android {
+    defaultConfig {
+        multiDexEnabled true
+        resConfigs "en"
+    }
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+}
+
+
+dependencies {
+    //implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.iarcuschin:simpleratingbar:0.1.3'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    //compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    //compile 'com.github.PhilJay:MPAndroidChart:v2.0.9'
+    //implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.github.Lukle:ClickableAreasImages:v0.1'
+    compile 'com.nightonke:boommenu:2.1.1'
+    compile 'com.github.Lukle:ClickableAreasImages:v0.1'
+    compile 'com.github.sujithkanna:smileyrating:1.6.8'
+    compile 'com.google.maps.android:android-maps-utils:0.5+'
+    compile 'com.google.android.gms:play-services:11.0.1'
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+// nam   compile 'org.apache.httpcomponents:httpclient:4.5'
+   // compile 'com.google.maps.android:android-maps-utils:0.4.2'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    testCompile 'junit:junit:4.12'
+
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.okhttp:okhttp:2.1.0'
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.sefford:circular-progress-drawable:1.31@aar'
+
+
+}

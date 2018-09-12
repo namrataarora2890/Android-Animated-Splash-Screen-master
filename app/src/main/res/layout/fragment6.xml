@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView style="?android:textAppearanceMedium"
+            android:padding="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We appreciate  your feedback " />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:id="@+id/f6name"
+            android:hint="Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/f6phone"
+            android:hint="Phone Number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_margin="5dp"
+            android:id="@+id/f6suggestions"
+            android:background="@drawable/edittextborder"
+            android:hint="Other Suggestions"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:id="@+id/btnSu"/>
+    </LinearLayout>
+</ScrollView>

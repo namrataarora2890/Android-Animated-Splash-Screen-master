@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseDemoActivity" >
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:map="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/mapc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_india"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:spinnerMode="dialog"
+        android:prompt="@string/TelecomCircle_prompt"
+        android:ellipsize="marquee"
+        android:layout_weight="1"
+        android:textSize="25pt"
+        android:textColor="#FF8B1500"
+        />
+
+    <View
+        android:id="@+id/VerticalLine"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="#aaa" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/spinner1"
+        android:prompt="@string/Technology_prompt"
+        android:ellipsize="marquee"
+        android:layout_weight="1"
+        android:textSize="25pt"
+        android:textColor="#FF8B1500"
+        />
+
+
+
+</FrameLayout-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseDemoActivity" >
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_list_selector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="4dp" >
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:spinnerMode="dialog"
+            android:prompt="@string/TelecomCircle_prompt"
+            android:ellipsize="marquee"
+            android:layout_weight="1"
+            android:textSize="25pt"
+            android:textColor="#FF8B1500"
+            />
+
+        <View
+            android:id="@+id/VerticalLinek"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+        <!--RadioButton
+            android:id="@+id/radioPopular"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+             /-->
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:spinnerMode="dialog"
+
+            android:prompt="@string/Technology_prompt"
+            android:ellipsize="marquee"
+            android:layout_weight="1"
+            android:textSize="25pt"
+            android:textColor="#FF8B1500"></Spinner>
+        <View
+            android:id="@+id/VerticalLine"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+        <!--RadioButton
+            android:id="@+id/radioAZ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:layout_weight="1"
+            /-->
+
+        <View
+            android:id="@+id/VerticalLinec"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+        <!--RadioButton
+            android:id="@+id/radioCategory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:layout_weight="1"
+            /-->
+        <!--View
+            android:id="@+id/VerticalLinev"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" /-->
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:spinnerMode="dialog"
+
+            android:prompt="@string/Technology_prompt"
+            android:ellipsize="marquee"
+            android:layout_weight="1"
+            android:textSize="25pt"
+            android:textColor="#FF8B1500"></Spinner>
+
+        <!--RadioButton
+            android:id="@+id/radioNearBy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:layout_weight="1"
+             /-->
+        <!--Button
+            android:id="@+id/radioNearBy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/spinner3"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:layout_weight="1" /-->
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radio_group_list_selector2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/radio_group_list_selector"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/butt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="GO"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:layout_weight="1" />
+    </RadioGroup>
+</RelativeLayout>

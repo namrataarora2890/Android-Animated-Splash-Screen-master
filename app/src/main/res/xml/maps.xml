@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<maps xmlns:android="http://schemas.android.com/apk/res/android">
+    <map name="india">
+        <area id="@+id/area1001" shape="rect" coords="118,124,219,226" />
+        <area id="@+id/area1000" shape="rect" coords="0,0,219,226" />
+        <area id="@+id/area1002" shape="rect" coords="474,374,574,476" />
+        <area id="@+id/area1004" shape="rect" coords="710,878,808,980" />
+        <area id="@+id/area1005" shape="circle" coords="574,214,74" />
+        <area id="@+id/area1006" shape="poly" coords="250,780,250,951,405,951" />
+        <area id="@+id/area1007" shape="poly" coords="592,502,592,730,808,730,808,502,709,502,709,603,690,603,690,502" />
+    </map>
+    <map name="usamap">
+        <area id="@+id/area1" shape="poly" coords="230,35,294,38,299,57,299,79,228,79" />
+        <area id="@+id/area2" shape="rect" coords="0,0,1500,1500" />
+    </map>
+</maps>
